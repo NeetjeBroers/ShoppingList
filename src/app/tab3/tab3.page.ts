@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
+import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
 
 declare var google;
 
@@ -56,7 +56,7 @@ export class Tab3Page {
     };
 
     this.nativeGeocoder.reverseGeocode(lattitude, longitude, options)
-      .then((result: NativeGeocoderReverseResult[]) => {
+      .then((result: NativeGeocoderResult[]) => {
         this.address = '';
         const responseAddress = [];
         for (const [key, value] of Object.entries(result[0])) {
