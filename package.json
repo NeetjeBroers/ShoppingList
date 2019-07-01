@@ -20,9 +20,11 @@
     "@angular/platform-browser": "^7.2.2",
     "@angular/platform-browser-dynamic": "^7.2.2",
     "@angular/router": "^7.2.2",
+    "@capacitor/cli": "^1.1.0",
+    "@capacitor/core": "^1.1.0",
     "@ionic-native/camera": "^5.8.0",
     "@ionic-native/core": "^5.0.0",
-    "@ionic-native/geolocation": "^5.0.0",
+    "@ionic-native/geolocation": "^4.20.0",
     "@ionic-native/http": "^5.8.0",
     "@ionic-native/native-geocoder": "^5.0.0",
     "@ionic-native/splash-screen": "^5.0.0",
@@ -84,9 +86,13 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-advanced-http": {},
+      "cordova-plugin-advanced-http": {
+        "OKHTTP_VERSION": "3.10.0"
+      },
       "cordova-plugin-geolocation": {
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
       },
